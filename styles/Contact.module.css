@@ -1,0 +1,130 @@
+.container{
+    height:fit-content;
+    width: 100%;
+    color:  #111a21 ;
+    padding:0 4rem 2rem 4rem;
+}
+
+.container >h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  
+}
+.container >h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+
+.container>h3 {
+    font-size: 1.5rem;
+}
+
+.contactCon {
+    width: 80%;
+    height: 30rem;
+    border:1rem solid  #111a21;
+    margin:1rem auto;
+    display: flex;
+}
+
+.info{
+    width: 50%;
+    height:20rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    margin:auto -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.contactCon>  form {
+    width: 50%;
+    height:20rem;
+    background-color: white;
+    margin: auto;
+    margin-right: -14%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.contactCon>  form >input {
+    flex:0.3;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    background-color: #111a21;
+    border:none;
+}
+.contactCon>  form >input:hover{
+    background-color: #111a21b4
+}
+.contactCon>  form >.topinput {
+      flex:0.4;
+      width:100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contactCon>  form >.topinput >input{
+       width: 48%;
+       height: 3rem;
+       border-radius: 0.5rem;
+       padding-left: 0.5rem;
+       background-color: transparent;
+       border:4px solid rgb(175, 175, 175);
+       
+    }
+
+    .contactCon>  form > textarea {
+      flex: 1;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      background-color: transparent;
+      border:4px solid rgb(175, 175, 175);
+     
+}
+
+
+
+
+@media (max-width: 900px) {
+    .container{
+        padding:1rem 1.5rem;
+        margin:0;
+      }
+    .contactCon{
+        flex-direction: column;
+        height: 35rem;
+    }
+    .info{
+        margin: 0;
+        width:100%;
+        height: 50%;
+    }
+    .contactCon > form{
+        margin:0;
+        width:100%;
+        height: 50%;
+    }
+}

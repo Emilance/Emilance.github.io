@@ -1,0 +1,90 @@
+.container{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.float{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 4rem;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+}
+
+.float > h2{
+    font-size: 3rem;
+    width: 30rem;
+    padding: 0;
+    word-spacing: 0;
+    
+}
+
+.float > span {
+    font-size: 1.5rem
+}
+
+.float>a{
+    border: 1px solid white ; 
+    padding: 0.5rem  0.9rem;
+    position: relative;
+}
+
+.float>a::before{
+   content: "";
+   position:absolute;
+   background: white;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -5;
+   transition:  transform 0.8s;
+    transform-origin: 0 0;
+   transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
+   transform: scaleX(0);
+   color:#111a21;
+}
+
+.float>a:hover{
+    color:#111a21;
+    font-weight: 500;
+}
+.float>a:hover::before{
+    transform: scaleX(1)
+}
+
+
+
+
+@media (max-width:1000px) {
+
+.container{
+    width: 100vw;
+}
+.float{
+    padding-left:1.6rem;
+
+    background-color: #111a2186;
+}
+.float > h2{
+    font-size:2rem;
+    width:fit-content;
+    padding: 0;
+    word-spacing: 0;
+    
+}
+.float > span{
+    font-size: 1.3rem;
+}
+
+
+}

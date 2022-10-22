@@ -1,0 +1,84 @@
+.container{
+    height:fit-content;
+    width: 100%;
+    color:  #111a21 ;
+    padding:0 4rem 2rem 4rem;
+}
+
+.container >h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  
+}
+.container >h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+
+.container>h3 {
+    font-size: 1.5rem;
+}
+.container >  p{
+    font-size: 1.27rem;
+}
+.skillcon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.skillcard {
+    width: 80%;
+    padding: 0 1rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.589);
+    background-color:#111a2113;
+}
+.skillcard > h3 {
+    margin : 0;
+}
+.pentagon{
+    background-color: #111a21 ;
+    color:white;
+    margin:-2.5rem auto 0rem auto ;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+
+@media (max-width:1000px) {
+  .container{
+    padding:1rem 1.5rem;
+    margin:0;
+  }
+  .pentagon{
+    height: 3rem;
+    width: 3rem;
+    margin:-2.5rem auto 0rem auto ;
+  
+  }
+  .skillcard{
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+
+}

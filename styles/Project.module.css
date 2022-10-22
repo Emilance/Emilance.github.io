@@ -1,0 +1,185 @@
+.container{
+    height:fit-content;
+    width: 100%;
+    color:  white ;
+    padding:0 4rem 2rem 4rem;
+    margin: 3rem 0 1rem 0;
+    background-color:  #111a218e;
+}
+
+.container >h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  
+}
+.container >h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+
+.container>h3 {
+    font-size: 1.5rem;
+}
+.container >  p{
+    font-size: 1.27rem;
+}
+
+.projectCon{
+    width: 90%;
+    margin: auto;
+    padding-top:2rem ;
+    padding-bottom:2rem ;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #05263f67;
+    position: relative;
+    margin-top: 1rem;
+   
+   
+
+}
+
+.projectCon:hover .buttonCon{
+    transform: scaleY(1)
+
+}
+
+.projectCon1{
+    width: 90%;
+    margin: auto;
+    padding-top:2rem ;
+    padding-bottom:2rem ;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #05263f67;
+    position: relative;
+    margin-top: 1rem;
+   
+   
+
+}
+
+.projectCon1:hover .buttonCon{
+    transform: scaleY(1)
+
+}
+.buttonCon{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top:0;
+    padding-top:2rem;
+    height: 26%;
+    border-radius: 1rem  1rem 0 0;
+    background-color: #111a21b2;
+    transition:  transform 0.8s;
+    transform-origin: 0 0;
+   transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
+   transform: scaleY(0);
+}
+
+.buttonCon >a{
+    border: 1px solid white ; 
+    padding: 0.5rem  0.9rem;
+    position: relative;
+    margin:1rem 0.5rem;
+    color:white;
+    font-weight: 700;
+    
+}
+
+.buttonCon>a::before{
+    content: "";
+    position:absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    transition:  transform 0.8s;
+     transform-origin: 0 0;
+    transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
+    transform: scaleY(0);
+    color:#111a21;
+ }
+ 
+ .buttonCon>a:hover{
+     color:#111a21;
+
+ }
+ .buttonCon>a:hover::before{
+     transform: scaleY(1)
+ }
+ 
+ 
+ 
+
+.image{
+    position: relative;
+    height: 18rem;
+    width:50%;
+    border-radius:1rem;
+   
+}
+
+.img{
+    border-radius:1rem;
+}
+
+.projectdetails{
+    background-color: #2e3a42;
+    color: white;
+    width: 40%;
+    z-index: 3;
+    min-height: 70%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius:1rem;
+    margin: -10%;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    .container{
+       padding:1rem 1.5rem;
+       margin:0;
+    }
+    .projectCon{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    .projectCon1{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    .image{
+        width: 97%;
+    }
+    .projectdetails{
+        width: 80%;
+    }
+}

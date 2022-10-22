@@ -29,7 +29,7 @@ const  Projects  = ()=>{
          {projectList.map((data, i)=>{
             return(
 
-         <div className={i% 2 === 0 ?   styles.projectCon  : styles.projectCon1}>
+         <div key={i} className={i% 2 === 0 ?   styles.projectCon  : styles.projectCon1}>
               <div className={styles.buttonCon}>
               <a href="#">LIVE PROJECT</a>
               <a href="#">GITHUB REPO</a>

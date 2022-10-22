@@ -9,9 +9,9 @@ const  About  = ()=>{
         <div id="about" className={styles.container}>
             <h1>About</h1>
             <h3> WHO AM I</h3>
-            <p>An enthusiastic team player  with vast curousity to solve problems in the web field,  I'm eager to contribute to team success through hard work, 
+            <p>An enthusiastic team player  with vast curousity to solve problems in the web field,  I am eager to contribute to team success through hard work, 
 attention to detail and excellent organizational skills. With clear understanding of client application and 
-server based application, I’m motivated to learn, grow and excel in the tech space. </p>
+server based application, I am motivated to learn, grow and excel in the tech space. </p>
             <h3> SKILLS</h3>
             <div className={styles.skillcon}>
                 <SkillCard

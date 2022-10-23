@@ -21,10 +21,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Daniel's Portfolio</title>
+        <title>Daniel Portfolio</title>
         <meta name="description" content="A Portfolio website built with NextJs" />
         <link rel="icon" href="/danport.png" />
-        <meta property="og:title"  content="DDaniel's Portfolio"/>
+        <meta property="og:title"  content="Daniel Portfolio"/>
         <meta property="og:description"  content="A Portfolio website built with NextJs"/>
         <meta property="og:url"  content="https://danport.vercel.app/"/>
         <meta property="og:image"  href="/danport.png"/>

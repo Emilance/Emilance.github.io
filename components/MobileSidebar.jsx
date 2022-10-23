@@ -24,19 +24,19 @@ const MobileSideNav = () => {
                  <div className={styles.nameContainer}>
                         <h1 >DAMILOLA DANIEL</h1>
                         <div className={styles.socialIcon}>
-                        <a  target='_blank' rel='norefferer' href='https://twitter.com/EminenceX3' className ={styles.IconCon}>
+                        <a   href='https://twitter.com/EminenceX3' className ={styles.IconCon}>
                                 <BsTwitter size="15"/>
                             </a>
-                            <a target='_blank'  rel='norefferer'  href="https://www.instagram.com/eminencedd/" className ={styles.IconCon}>
+                            <a   href="https://www.instagram.com/eminencedd/" className ={styles.IconCon}>
                                 <BsInstagram size="15"/>
                             </a>
-                            <a   target='_blank'  rel='norefferer'  href="https://web.facebook.com/damiloladaniel.alabi/" className ={styles.IconCon}>
+                            <a     href="https://web.facebook.com/damiloladaniel.alabi/" className ={styles.IconCon}>
                                 <RiFacebookFill size="15"/>
                             </a>
-                            <a target='_blank'  rel='norefferer'  href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'  className ={styles.IconCon}>
+                            <a   href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'  className ={styles.IconCon}>
                                 <RiLinkedinFill size="20"/>
                             </a>
-                            <a target="_blank"  rel='norefferer'  href='https://github.com/emilance'  className ={styles.IconCon}>
+                            <a   href='https://github.com/emilance'  className ={styles.IconCon}>
                                 <RiGithubLine size="20"/>
                             </a>
                         </div>

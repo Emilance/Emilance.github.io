@@ -58,6 +58,10 @@
 .experience >p{
     margin:0.4rem;
 }
+.experience >p>a {
+    text-decoration: underline;
+    color: #149ddd;
+}
 .treeIcon{
     background-color: #111a21;
     height: 2.5rem;

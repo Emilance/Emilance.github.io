@@ -14,8 +14,8 @@ const  About  = ()=>{
         <div id="about" className={styles.container}>
             <h1  data-aos="fade-up">About</h1>
             <h3 data-aos="fade-up"> WHO AM I</h3>
-            <p data-aos="fade-up">An enthusiastic team player  with vast curousity to solve problems in the web field,  I am eager to contribute to team success through hard work, 
-attention to detail and excellent organizational skills. Currently open to work, feel free to contact me for  gigs related to web development </p>
+            <p data-aos="fade-up">An enthusiastic team player  with vast curousity to solve problems using web technologies, always eager to contribute to team success through hard work, 
+attention to details and excellent organizational skills. I am currently open to work, feel free to contact me for  gigs related to web development </p>
             <h3> SKILLS</h3>
             <div className={styles.skillcon}>
                 <SkillCard

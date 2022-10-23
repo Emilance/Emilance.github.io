@@ -38,8 +38,8 @@ const  Projects  = ()=>{
 
          <div key={i} className={i% 2 === 0 ?   styles.projectCon  : styles.projectCon1}>
               <div className={styles.buttonCon}>
-              <a target='_blank' href={data.live}>LIVE PROJECT</a>
-              <a target='_blank' href={data.source}>GITHUB REPO</a>
+              <a target='_blank' rel='norefferer' href={data.live}>LIVE PROJECT</a>
+              <a target='_blank' rel='norefferer' href={data.source}>GITHUB REPO</a>
               </div>
             <div   data-aos="fade-down"  className={styles.image}>
                  <Image src={data.image} alt='' layout='fill'   className={styles.img} />

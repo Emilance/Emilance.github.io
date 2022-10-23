@@ -3,15 +3,19 @@ import SkillCard from '../SkillCard'
 import {FaReact, FaNodeJs, FaPython, FaVuejs} from "react-icons/fa"
 import {SiMongodb, SiTypescript, SiDjango}  from "react-icons/si"
 import  {TbBrandJavascript,  TbBrandNextjs} from "react-icons/tb"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const  About  = ()=>{
+    useEffect(() => {
+        AOS.init( {duration:"500"});
+      }, [])
     return(
         <div id="about" className={styles.container}>
-            <h1>About</h1>
-            <h3> WHO AM I</h3>
-            <p>An enthusiastic team player  with vast curousity to solve problems in the web field,  I am eager to contribute to team success through hard work, 
-attention to detail and excellent organizational skills. With clear understanding of client application and 
-server based application, I am motivated to learn, grow and excel in the tech space. </p>
+            <h1  data-aos="fade-up">About</h1>
+            <h3 data-aos="fade-up"> WHO AM I</h3>
+            <p data-aos="fade-up">An enthusiastic team player  with vast curousity to solve problems in the web field,  I am eager to contribute to team success through hard work, 
+attention to detail and excellent organizational skills. Currently open to work, feel free to contact me for  gigs related to web development </p>
             <h3> SKILLS</h3>
             <div className={styles.skillcon}>
                 <SkillCard
@@ -19,7 +23,7 @@ server based application, I am motivated to learn, grow and excel in the tech sp
                     name="ReactJs"
                     scolor= "#7cc5d9"
                 />
-                <SkillCard
+                <SkillCard  
                  icon={<FaNodeJs  size="30"/>}
                  name= "NodeJS"
                  scolor="#68a063"

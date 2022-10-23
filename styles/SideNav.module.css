@@ -9,6 +9,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    
+}
+.mcontainer{
+    position: fixed;
+    width: 25%;
+    background-color: white;
+    z-index: 500;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   display: none;
+ 
     
 }
 .top{
@@ -77,6 +93,9 @@
     text-decoration: underline;
     transform: scale(1.12);
 }
+.NavCon > a:active{
+    color:#149ddd ;
+}
 .space{
     flex:0.3;
 }
@@ -84,7 +103,12 @@
 
 
 @media (max-width:1000px) {
-  .container{
-    display: none;
+    .container{
+        display: none;
+    }
+  .mcontainer{
+    width: 70%;
+    display: flex;
+
   }
     }

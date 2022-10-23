@@ -1,6 +1,8 @@
 import styles from '../../styles/Experience.module.css'
 import {FaPencilAlt} from "react-icons/fa"
- 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const experienceInfo =[
     {
@@ -20,10 +22,13 @@ const experienceInfo =[
     },
 ]
 const  Experience  = ()=>{
+    useEffect(() => {
+        AOS.init( {duration:"500"});
+      }, [])
     return(
      <div id="experience"   className={styles.container}>
-         <h1>Experience</h1>
-         <h3> My Work Experience</h3>
+         <h1 data-aos="fade-up">Experience</h1>
+         <h3 data-aos="fade-up"> My Work Experience</h3>
          {experienceInfo.map((data, index)=>{
             return(
 
@@ -32,7 +37,7 @@ const  Experience  = ()=>{
                   <FaPencilAlt size="20"/>
                </div>
 
-              <div className={styles.experience}>
+              <div data-aos="fade-up" className={styles.experience}>
                   <h2>{data.title}</h2>
                   <span>{data.year}</span>
                   <p> {data.description}</p>

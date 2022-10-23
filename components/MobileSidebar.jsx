@@ -2,10 +2,16 @@ import Image from 'next/image'
 import styles from '../styles/SideNav.module.css'
 import {BsTwitter, BsInstagram } from 'react-icons/bs'
 import {RiFacebookFill, RiLinkedinFill, RiGithubLine}  from 'react-icons/ri'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-const SideNav = () => {
+const MobileSideNav = () => {
+    useEffect(() => {
+        AOS.init( {duration:"800"});
+      }, [])
     return ( 
-        <div className={styles.container}>
+        <div data-aos="fade-right" className={styles.mcontainer}>
             
             <div className={styles.top}>
          
@@ -29,7 +35,7 @@ const SideNav = () => {
                             <a target='_blank'  href='https://www.linkedin.com/in/damilola-daniel-alabi-120036218/'  className ={styles.IconCon}>
                                 <RiLinkedinFill size="20"/>
                             </a>
-                            <a target="_blank" href='https://github.com/emilance'  className ={styles.IconCon}>
+                            <a target="_blank" href='https://github.com/emilance'   className ={styles.IconCon}>
                                 <RiGithubLine size="20"/>
                             </a>
                         </div>
@@ -49,4 +55,4 @@ const SideNav = () => {
      );
 }
  
-export default SideNav;
+export default MobileSideNav;

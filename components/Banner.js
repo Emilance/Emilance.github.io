@@ -5,16 +5,20 @@ import React, { Suspense } from "react";
 import { OrbitControls, Stars } from '@react-three/drei';
 import {Model} from '../public/Model'
 import Earth from "./sections/Earth";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 export default function AppBanner(){
-
+  useEffect(() => {
+    AOS.init( {duration:"1000"});
+  }, [])
 
   return (
     <div id="home" className={styles.container}>
       <div className={styles.float}>
-           <span > I AM DAMILOLA DANIEL ALABI</span>
-           <h2>A PROFICIENT WEB DEVELOPER </h2>
-           <a href="#">SEE MY RESUME</a>
+           <span data-aos="fade-up" > I AM DAMILOLA DANIEL ALABI</span>
+           <h2   data-aos="fade-up">A PROFICIENT WEB DEVELOPER </h2>
+           <a target='_blank'  href="/Resume.pdf" data-aos="fade-up" >DOWNLOAD MY RESUME</a>
       </div>
      <Canvas
          camera={{ position: [2, 0, 12.25], fov: 15 }}

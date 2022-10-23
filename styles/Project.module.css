@@ -163,8 +163,9 @@
 
 @media (max-width:600px) {
     .container{
-       padding:1rem 1.5rem;
+       padding:1rem 1.4rem;
        margin:0;
+       width:100vw;
     }
     .projectCon{
         flex-direction: column;

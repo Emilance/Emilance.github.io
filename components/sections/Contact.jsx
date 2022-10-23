@@ -1,9 +1,22 @@
 import styles from '../../styles/Contact.module.css'
 import {AiOutlineMail, AiOutlinePhone}from "react-icons/ai"
 import {GrLocation}  from "react-icons/gr"
-
+import emailjs from 'emailjs-com'
 
 const  Contact  = ()=>{
+    const sendData = (e ) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_0j9qlv9', 'template_mrwk62n', e.target, '1DW4hN_RXe2eopdg_')
+          .then((result) => {
+              console.log(result.text);
+              togglePopUp()
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+        
+    }
     return(
         <div id="contact" className={styles.container}>
             <h1>Contact</h1>
@@ -23,13 +36,13 @@ const  Contact  = ()=>{
                     <p>23 Damico Est, Ile Ife, Osun State</p>
                     </div>
                  </div>
-                 <form classname={styles.form}>
+                 <form classname={styles.form}  onSubmit={sendData}>
                     <div className={styles.topinput}>
-                        <input type="text" placeholder="Name"/>
-                        <input type="email" placeholder="Email"/>
+                        <input id="name" name="name" type="text" placeholder="Name"/>
+                        <input id="email" name="email" type="Email" placeholder="Email"/>
                     </div> 
-                    <textarea placeholder="write your message here"></textarea>
-                    <input type="submit"/>
+                    <textarea name="message" placeholder="write your message here"></textarea>
+                    <input  type="submit"  value = "Submit"/>
                  </form>
 
             </div>

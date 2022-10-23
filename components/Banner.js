@@ -40,7 +40,7 @@ export default function AppBanner(){
           fade={true}
 
           />
-          <Earth/>
+          <Earth   />
          </Suspense>
          <OrbitControls />
       </Canvas>

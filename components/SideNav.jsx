@@ -10,7 +10,7 @@ const SideNav = () => {
             <div className={styles.top}>
          
                <div className={styles.imageContainer}>
-                   <Image src="/dp.jpg"   alt="Alabi Damilola Daniel" className={styles.img}  layout='fill'/>
+                   <Image src="/dp-min.jpg"   alt="Alabi Damilola Daniel" className={styles.img}  layout='fill'/>
                </div>
             </div>
             <div className={styles.bottom}>

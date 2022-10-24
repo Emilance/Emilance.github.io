@@ -18,7 +18,7 @@ export default function AppBanner(){
       <div className={styles.float}>
            <span data-aos="fade-up" > I AM DAMILOLA DANIEL ALABI</span>
            <h2   data-aos="fade-up">A PROFICIENT WEB DEVELOPER </h2>
-           <a target='_blank' rel="noopener noreferrer" href="/Resume.pdf" data-aos="fade-up" >DOWNLOAD MY RESUME</a>
+           <a target='_blank' rel="noopener noreferrer" href="/ADDresume.pdf" data-aos="fade-up" >DOWNLOAD MY RESUME</a>
       </div>
      <Canvas
          camera={{ position: [2, 0, 12.25], fov: 15 }}

@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: #05263f67;
+    background-color: #05263f2a;
     position: relative;
     margin-top: 1rem;
    
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: #05263f67;
+    background-color: #05263f2a;
     position: relative;
     margin-top: 1rem;
    
@@ -160,7 +160,6 @@
 
 
 
-
 @media (max-width:600px) {
     .container{
        padding:1rem 1.4rem;
@@ -171,11 +170,13 @@
         flex-direction: column;
         width: 100%;
         height: fit-content;
+        background-color: transparent;
     }
     .projectCon1{
         flex-direction: column;
         width: 100%;
         height: fit-content;
+        background-color: transparent;
     }
     .image{
         width: 97%;

@@ -33,7 +33,7 @@ const  Experience  = ()=>{
                   <FaPencilAlt size="20"/>
                </div>
 
-              <div data-aos="fade-up" className={styles.experience}>
+              <div data-aos="fade-left" className={styles.experience}>
                   <h2>{data.title}</h2>
                   <span>{data.year}</span>
                   <p> {data.description}</p>
@@ -46,7 +46,7 @@ const  Experience  = ()=>{
                   <FaPencilAlt size="20"/>
                </div>
 
-              <div data-aos="fade-up" className={styles.experience}>
+              <div data-aos="fade-left" className={styles.experience}>
                   <h2>Freelance Web Designer on Fiverr</h2>
                   <span>May 2021 - Aug 2022</span>
                   <p>As a freelance Web designer , I designed and redesigned websites for clients on CMS platforms like Wordpress, squarespace, Shopify e.t.c   Check out my fiverr profile  <a target='_blank' rel="noopener noreferrer" href='https://www.fiverr.com/emilance'>here</a></p>

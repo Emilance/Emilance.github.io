@@ -74,6 +74,7 @@
     cursor: pointer;
     background-color: #111a21;
     border:none;
+    border-radius: 0.5rem;
     
 }
 .contactCon>  form >input:hover{
@@ -115,6 +116,7 @@
     .container{
         padding:1rem 1.5rem;
         margin:0;
+        width: 100vw;
       }
     .contactCon{
         flex-direction: column;

@@ -41,10 +41,10 @@ const  Projects  = ()=>{
               <a target='_blank' rel="noopener noreferrer" href={data.live}>LIVE PROJECT</a>
               <a  target='_blank' rel="noopener noreferrer" href={data.source}>GITHUB REPO</a>
               </div>
-            <div   data-aos="fade-down"  className={styles.image}>
+            <div   data-aos="fade-right"  className={styles.image}>
                  <Image src={data.image} alt='' layout='fill'   className={styles.img} />
             </div>
-            <div   data-aos="fade-up"  className={styles.projectdetails}>
+            <div   data-aos="fade-left"  className={styles.projectdetails}>
                   <h3>{data.title}</h3>
                   <p>{data.description}</p>
             </div>

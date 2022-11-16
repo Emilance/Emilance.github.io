@@ -27,7 +27,7 @@ export default function Home() {
         <meta property="og:title"  content="Daniel Portfolio"/>
         <meta property="og:description"  content="A Portfolio website built with NextJs"/>
         <meta property="og:url"  content="https://danport.vercel.app/"/>
-        <meta property="og:image"  href="/danport.png"/>
+        <meta property="og:image"  href={`${process.env.NEXT_PUBLIC_FAVICON}/danport.png`}/>
       </Head>
      {openSideBar    &&  
         <MobileSideNav/>

@@ -5,6 +5,13 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 const projectList =[
     {
+        image: "/befunded.png",
+        title: "BeFunded Fintech  Web App",
+        description: "I collaborated with 2 developers to build  beFunded a web app that connects entrepreneurs with angel investors and Venture capitalists who are ready to invest in companies and scalable ideas in exchange for equity",
+        live:"https://be-funded.vercel.app",
+        source: "https://github.com/Emilance/BeFunded"
+    },
+    {
         image: "/dyen.png",
         title: "DYEN ECOMMERCE WEBSITE",
         description: "A fullstack Ecommerce website built with NextJS and MongoDB as database, It allows user to login add products to cart and checkout, admin can also logIn with unique login detail to view the admin dashboard",
@@ -15,12 +22,13 @@ const projectList =[
         image: "/vuepage.png",
         title: "Emchat Chat Application",
         description: "Emchat is a real-time chat application built with vue and Django",
-
+        live:"https://github.com/Emilance/Emchat-frontend",
+        source: "https://github.com/Emilance/Emchat-frontend"
     },
     {
         image: "/TheVolink.PNG",
         title: "TheVolink Landing Page",
-        description: "A business landing page built with ReactJs and typescript, the landing page is created with the motive of converting visitors to join the business waitlist",
+        description: "A business landing page built with ReactJs and typescript, the landing page was built with the motive of generating leads of visitors who are interested in joining theVolink waitlist",
         live:"https://theVolink.netlify.app",
         source: "https://github.com/Emilance/thevolink"
     },

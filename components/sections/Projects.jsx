@@ -43,7 +43,6 @@ const  Projects  = ()=>{
          <h3   data-aos="fade-up" > My Projects</h3>
          {projectList.map((data, i)=>{
             return(
-
          <div key={i} className={i% 2 === 0 ?   styles.projectCon  : styles.projectCon1}>
               <div className={styles.buttonCon}>
               <a target='_blank' rel="noopener noreferrer" href={data.live}>LIVE PROJECT</a>

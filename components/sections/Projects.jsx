@@ -5,13 +5,6 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 const projectList =[
     {
-        image: "/befunded.png",
-        title: "BeFunded Fintech  Web App",
-        description: "I collaborated with 2 developers to build  beFunded a web app that connects entrepreneurs with angel investors and Venture capitalists who are ready to invest in companies and scalable ideas in exchange for equity",
-        live:"https://be-funded.vercel.app",
-        source: "https://github.com/Emilance/BeFunded"
-    },
-    {
         image: "/dyen.png",
         title: "DYEN ECOMMERCE WEBSITE",
         description: "A fullstack Ecommerce website built with NextJS and MongoDB as database, It allows user to login add products to cart and checkout, admin can also logIn with unique login detail to view the admin dashboard",

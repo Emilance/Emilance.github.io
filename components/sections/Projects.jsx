@@ -25,6 +25,13 @@ const projectList =[
         live:"https://theVolink.netlify.app",
         source: "https://github.com/Emilance/thevolink"
     },
+    {
+        image: "/moreprojects.png",
+        title: "More Projects",
+        description: "Checkout More Projects ",
+        live:"https://emmyjsx.netlify.app/projects",
+        source: "https://github.com/Emilance?tab=repositories"
+    },
 ]
 const  Projects  = ()=>{
     useEffect(() => {

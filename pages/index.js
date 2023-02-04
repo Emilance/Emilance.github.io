@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import  React, { Suspense, useState } from 'react'
 import AppBanner from '../components/Banner.js'
 import FancyBurger from '../components/FancyBurger.jsx'
 import Footer from '../components/Footer.jsx'
@@ -8,9 +8,8 @@ import MobileSideNav from '../components/MobileSidebar.jsx'
 import About from '../components/sections/About.jsx'
 import Contact from '../components/sections/Contact.jsx'
 import Experience from '../components/sections/Experience.jsx'
-import Projects from '../components/sections/Projects.jsx'
 import SideNav from '../components/SideNav.jsx'
-
+const Projects = React.lazy(() => import('../components/sections/Projects.jsx'));
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -39,7 +38,10 @@ export default function Home() {
         <AppBanner/>
         <About/>
         <Experience/>
-        <Projects/>
+        <Suspense fallback={<h1>Loading......</h1>}>
+
+        {/* <Projects/> */}
+        </Suspense>
         <Contact/>
         <Footer/>
  

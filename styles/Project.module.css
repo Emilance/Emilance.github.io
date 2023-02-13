@@ -35,7 +35,7 @@
 }
 
 .projectCon{
-    width: 90%;
+    width:65vw;
     margin: auto;
     padding-top:2rem ;
     padding-bottom:2rem ;
@@ -58,7 +58,7 @@
 }
 
 .projectCon1{
-    width: 90%;
+    width: 65vw;
     margin: auto;
     padding-top:2rem ;
     padding-bottom:2rem ;
@@ -156,11 +156,36 @@
     margin: -10%;
 }
 
+.flexCon{
+    width: 100%;
+    position: relative;
+}
+.slideCon{
+    display: flex;
+    width:calc(70vw * 5);
+    transition: 1s ease all;
+}
+
+.arrow{
+    position: absolute;
+    width:2rem;
+    height: 2rem;
+    top: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
 
 
 
 
 @media (max-width:600px) {
+    .arrow{
+        display: none;
+    }
+    .flexCon{
+        overflow-x: scroll;
+    }
     .container{
        padding:1rem 1.4rem;
        margin:0;
@@ -168,13 +193,13 @@
     }
     .projectCon{
         flex-direction: column;
-        width: 100%;
+        width: 75vw;
         height: fit-content;
         background-color: transparent;
     }
     .projectCon1{
         flex-direction: column;
-        width: 100%;
+        width:75vw;
         height: fit-content;
         background-color: transparent;
     }
@@ -182,6 +207,27 @@
         width: 97%;
     }
     .projectdetails{
-        width: 80%;
+        width: 85%;
+    }
+
+    .projectdetails > p{
+        display: none;
+    }
+    .slideCon{
+        width:calc(81vw * 5);
+    }
+    .buttonCon{
+        width: 100%;
+        margin: 0;
+        padding:1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttonCon > a{
+        font-size: 1rem;   
+        margin: 0;
+        margin-top: 0.5rem;
     }
 }

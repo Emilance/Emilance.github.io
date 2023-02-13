@@ -6,16 +6,17 @@ import { useEffect } from 'react';
 
 const experienceInfo =[
     {
+        title:"Backend developer at LearnPlanet",
+        year: "Dec 2022 - Present",
+        description:"Currently working at  HomeSchoolNg as a NodeJs developer where I work on a project called learnplanet"
+    },
+
+    {
         title:"NextJS Frontend Developer at PlayJor",
         year: "Jul 2022 - Aug 2022",
         description:"I worked together with a team of backend dev and frontend dev to setup a marketplace on Playjor platform"
-    },
-    {
-        title:"NodeJS Developer at Hostinza",
-        year: "Aug 2022 - Oct 2022",
-        description:"I setup stripe payment workflow on Hostinza with Nodejs and connected with NextJS frontend, built some API endpoints and cofigured the platform for matomo analytics"
-    },
-
+    }
+   
 ]
 const  Experience  = ()=>{
     useEffect(() => {

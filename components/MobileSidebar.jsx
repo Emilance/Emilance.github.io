@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Link from 'next/link';
 
-const MobileSideNav = () => {
+const MobileSideNav = ({toggleSideBar}) => {
     useEffect(() => {
         AOS.init( {duration:"800"});
       }, [])
@@ -42,11 +42,11 @@ const MobileSideNav = () => {
                         </div>
             </div>
                         <div className={styles.NavCon}>
-                            <a  href="#home"> HOME </a>
-                            <a  href="#about"> ABOUT </a>
-                            <a  href="#experience">EXPERIENCE  </a>
-                            <a  href="#project"> PROJECT </a>
-                            <a  href="#contact"> CONTACT </a>
+                            <a  href="#home"  onClick={toggleSideBar}   > HOME </a>
+                            <a  href="#about"  onClick={toggleSideBar} > ABOUT </a>
+                            <a  href="#experience" onClick={toggleSideBar} >EXPERIENCE  </a>
+                            <a  href="#project"   onClick={toggleSideBar}> PROJECT </a>
+                            <a  href="#contact"   onClick={toggleSideBar}> CONTACT </a>
                         </div>
                         <div className={styles.space}>
 

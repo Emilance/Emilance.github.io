@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="og:image6"  href="/danport.png"/>
       </Head>
      {openSideBar    &&  
-        <MobileSideNav/>
+        <MobileSideNav toggleSideBar={toggleSideBar} />
     }
     <SideNav/>
 
@@ -40,7 +40,7 @@ export default function Home() {
         <Experience/>
         <Suspense fallback={<h1>Loading......</h1>}>
 
-        {/* <Projects/> */}
+        <Projects/>
         </Suspense>
         <Contact/>
         <Footer/>

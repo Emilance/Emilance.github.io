@@ -7,13 +7,7 @@ import { useState } from 'react';
 import {MdArrowForwardIos, MdArrowBackIos } from "react-icons/md"
 
 const projectList =[
-    {
-        image: "/tuchdelta.png",
-        title: "TUCHDELTA",
-        description: "I collaborated with a two other developers to build  TuchDelta platform, An Ecommerce website built with ReactJS at the frontend and PHP for the backend  ",
-        live:"https://tuchdelta.vercel.app",
-        source: "https://github.com/Emilance/tuchdelta"
-    },
+    
     {
         image: "/dyen.png",
         title: "DYEN",
@@ -41,7 +35,14 @@ const projectList =[
         description: "A twitter management app built with React, typeScript and Flask",
         live:"/",
         source: "https://github.com/Emilance/twitahandler"
-    }
+    },
+    {
+        image: "/tuchdelta.png",
+        title: "TUCHDELTA",
+        description: "I collaborated with a two other developers to build  TuchDelta platform, An Ecommerce website built with ReactJS at the frontend and PHP for the backend  ",
+        live:"https://tuchdelta.vercel.app",
+        source: "https://github.com/Emilance/tuchdelta"
+    },
 ]
 const  Projects  = ()=>{
     const [pindex, setPIndex ] = useState(0)

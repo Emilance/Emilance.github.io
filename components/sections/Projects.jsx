@@ -8,24 +8,24 @@ import {MdArrowForwardIos, MdArrowBackIos } from "react-icons/md"
 
 const projectList =[
     
-    {
-        image: "/dyen.png",
-        title: "DYEN",
-        description: "A fullstack Ecommerce website built with NextJS and MongoDB as database, It allows user to login add products to cart and checkout, admin can also logIn with unique login detail to view the admin dashboard",
-        live:"https://dyen.vercel.app",
-        source: "https://github.com/Emilance/Dyenwebsite"
-    },
-    {
-        image: "/befunded.png",
-        title: "BEFUNDED",
-        description:"I collaborated with 2 developers to build  beFunded a web app that connects entrepreneurs with angel investors and Venture capitalists who are ready to invest in companies and scalable ideas in exchange for equity"  ,
-        live:"https://be-funded.vercel.app",
-        source:"https://github.com/Emilance"
-    },
+    // {
+    //     image: "/dyen.png",
+    //     title: "DYEN",
+    //     description: "A fullstack Ecommerce website built with NextJS and MongoDB as database, It allows user to login add products to cart and checkout, admin can also logIn with unique login detail to view the admin dashboard",
+    //     live:"https://dyen.vercel.app",
+    //     source: "https://github.com/Emilance/Dyenwebsite"
+    // },
+    // {
+    //     image: "/befunded.png",
+    //     title: "BEFUNDED",
+    //     description:"I collaborated with 2 developers to build  beFunded a web app that connects entrepreneurs with angel investors and Venture capitalists who are ready to invest in companies and scalable ideas in exchange for equity"  ,
+    //     live:"https://be-funded.vercel.app",
+    //     source:"https://github.com/Emilance"
+    // },
     {
         image: "/vuepage.png",
         title: "Emchat Chat Application",
-        description: "Emchat is a real-time chat application built with vue and Django",
+        description: "Emchat is a real-time chat application built with vue and NodeJs",
         live:"https://github.com/Emilance/Emchat-frontend",
         source: "https://github.com/Emilance/Emchat-frontend"
     },
@@ -39,7 +39,7 @@ const projectList =[
     {
         image: "/tuchdelta.png",
         title: "TUCHDELTA",
-        description: "I collaborated with a two other developers to build  TuchDelta platform, An Ecommerce website built with ReactJS at the frontend and PHP for the backend  ",
+        description: "An Ecommerce website built with ReactJS and Tailwind CSS ",
         live:"https://tuchdelta.vercel.app",
         source: "https://github.com/Emilance/tuchdelta"
     },

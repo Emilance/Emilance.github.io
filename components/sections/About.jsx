@@ -1,6 +1,6 @@
 import styles from '../../styles/About.module.css'
 import SkillCard from '../SkillCard'
-import {BiGitMerge}  from "react-icons/bi"
+import {SiJest}  from "react-icons/si"
 import {FaReact, FaNodeJs, FaPython, FaVuejs} from "react-icons/fa"
 import {SiMongodb, SiTypescript}  from "react-icons/si"
 import  {TbBrandJavascript,  TbBrandNextjs} from "react-icons/tb"
@@ -55,7 +55,7 @@ attention to details and excellent organizational skills. I am currently open to
                  scolor="#fa74a0"
                 />
                  <SkillCard
-                 icon={<BiGitMerge  size="30"/>}
+                 icon={<SiJest  size="30"/>}
                  name="Git"
                  scolor="#092e20"
                 />

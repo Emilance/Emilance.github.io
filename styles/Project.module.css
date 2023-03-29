@@ -162,7 +162,7 @@
 }
 .slideCon{
     display: flex;
-    width:calc(70vw * 5);
+    width:calc(70vw * 3);
     transition: 1s ease all;
 }
 
@@ -214,7 +214,7 @@
         display: none;
     }
     .slideCon{
-        width:calc(81vw * 5);
+        width:calc(81vw * 3);
     }
     .buttonCon{
         width: 100%;

@@ -100,7 +100,7 @@
 
 }
 .socialIcon >a {
-    color: white;
+    color: #e0f0b3;
     margin-bottom: 0.5rem;
 }
 
@@ -145,7 +145,7 @@
 .socialIcon{
     right: 0.5rem;
     height: 20vh;
-    z-index: 10000;
+    z-index: 30000;
 }
 
 }

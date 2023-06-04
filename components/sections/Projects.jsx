@@ -26,7 +26,7 @@ const projectList =[
         ]
     },
     {
-        image: "/astro.png",
+        image: "/stro.png",
         title: "ASTROMUTATIO",
         description: "A learning platform built for stellar enthusiast to learn about stars with videos and interactive 3d visualization, Features include 3D interractive Visualization, video Contents",
         live:"https://astromutatio.vercel.app",

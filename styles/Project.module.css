@@ -110,10 +110,7 @@
 
 }
 
-.flexCon{
-    width: 100%;
-    position: relative;
-}
+
 .slideCon{
     display: flex;
     width: 100%;
@@ -162,9 +159,7 @@
     .arrow{
         display: none;
     }
-    .flexCon{
-        overflow-x: scroll;
-    }
+   
     .container{
        padding:1rem 1.4rem;
        margin:0;
@@ -172,27 +167,37 @@
     }
     .projectCon{
         flex-direction: column;
-        width: 75vw;
+        padding: 0;
+        width: 100%;
         height: fit-content;
         background-color: transparent;
     }
     .projectCon1{
         flex-direction: column;
-        width:75vw;
+        width:100%;
         height: fit-content;
         background-color: transparent;
+        padding: 0;
     }
     .image{
         width: 97%;
     }
     .projectdetails{
         width: 85%;
+        padding: 1rem;
+        margin-top: -5%;
     }
 
     .projectdetails > p{
         display: none;
     }
     .slideCon{
+        width: 100%;
+    }
+    .pCon{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
   
 }

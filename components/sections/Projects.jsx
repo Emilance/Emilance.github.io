@@ -77,15 +77,13 @@ const  Projects  = ()=>{
     return(
         <div id="project" className={styles.container}>
          <h1  data-aos="fade-up" >Project</h1>
-         <h3   data-aos="fade-up" > My Projects</h3>
-         <div className={styles.flexCon}>
-       
+         <h3   data-aos="fade-up" > My Projects</h3>       
         
          <div className={styles.slideCon}   >
         
                     {projectList.map((data, i)=>{
                         return(
-                    <div key={i} > 
+                    <div key={i}  className={styles.pCon} > 
                     <div className={(i % 2 === 0 )?  styles.projectCon  : styles.projectCon1}>
 
                         <div   data-aos="fade-right"  className={styles.image}>
@@ -118,7 +116,7 @@ const  Projects  = ()=>{
 
            
          </div>
-         </div>
+
 
                
         </div>

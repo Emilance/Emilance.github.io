@@ -52,6 +52,7 @@
     .slide_inner {
         flex-direction: column;
         text-align: center;
+        height: fit-content;
      }
 
     .slide img {

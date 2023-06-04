@@ -20,7 +20,7 @@ export default function AppBanner(){
     <div id="home" className={styles.container}>
       <div className={styles.float}>
            <span data-aos="fade-up" >Revolutionize Your Web Presence:</span>
-           <h2   data-aos="fade-up"> Let's Create <span>Innovative Solutions</span>  Together</h2>
+           <h2   data-aos="fade-up"> Let&apos;s Create <span>Innovative Solutions</span>  Together</h2>
            <a  href="#contact" data-aos="fade-up" >CONTACT ME NOW</a>
            <div className={styles.socialIcon}>
                             <a target='_blank' rel="noopener noreferrer" href='https://twitter.com/EminenceX3' className ={styles.IconCon}>

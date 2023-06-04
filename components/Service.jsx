@@ -65,7 +65,7 @@ const ServiceSection = () => {
             </div>
           <div  className={styles.details} >
             <h3>GPT ChatBot Integration</h3>
-            <p>Enhance your website's interactivity and customer support 
+            <p>Enhance your website&apos;s interactivity and customer support 
                 with intelligent GPT-powered chatbots. As a skilled developer, I can seamlessly integrate chatbot technology into your website, providing personalized experiences, automating conversations,
                  and ensuring round-the-clock assistance for your users.</p>
           </div>  

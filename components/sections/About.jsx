@@ -16,7 +16,7 @@ const  About  = ()=>{
         <div id="about" className={styles.container}>
             <h1  data-aos="fade-up">About</h1>
             <h3 data-aos="fade-up"> WHO AM I</h3>
-            <p data-aos="fade-up">I help businesses and individuals establish a compelling online presence. I combine creativity, technical proficiency, and a customer-centric approach to deliver tailored solutions that engage audiences, streamline processes, and drive tangible results. Let's collaborate to bring your digital vision to life and make a lasting impact in the digital world </p>
+            <p data-aos="fade-up">I help businesses and individuals establish a compelling online presence. I combine creativity, technical proficiency, and a customer-centric approach to deliver tailored solutions that engage audiences, streamline processes, and drive tangible results. Let&apos;s collaborate to bring your digital vision to life and make a lasting impact in the digital world </p>
             <h3> SERVICE</h3>
             <ServiceSection/>
           

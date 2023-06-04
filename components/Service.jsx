@@ -14,7 +14,20 @@ const ServiceSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-   
+    appendDots: dots => (
+      <ul style={{ backgroundColor: 'transparent', bottom: '-25px' }}>{dots}</ul>
+    ),
+    customPaging: () => (
+      <div
+        style={{
+          width: '10px',
+          height: '10px',
+          backgroundColor: '#fff',
+          borderRadius: '50%',
+          margin: '0 8px',
+        }}
+      />
+    ),
   };
 
   return (

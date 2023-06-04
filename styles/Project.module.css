@@ -35,16 +35,15 @@
 }
 
 .projectCon{
-    width:65vw;
     margin: auto;
-    padding-top:2rem ;
-    padding-bottom:2rem ;
+    padding:2rem ;
     height: fit-content;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: #05263f2a;
+    background-color:  transparent;
     position: relative;
     margin-top: 1rem;
    
@@ -52,23 +51,18 @@
 
 }
 
-.projectCon:hover .buttonCon{
-    transform: scaleY(1)
-
-}
 
 .projectCon1{
-    width: 65vw;
+    width: 100%;
     margin: auto;
-    padding-top:2rem ;
-    padding-bottom:2rem ;
+    padding:2rem ;
     height: fit-content;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: #05263f2a;
+    background-color: transparent;
     position: relative;
     margin-top: 1rem;
    
@@ -76,70 +70,23 @@
 
 }
 
-.projectCon1:hover .buttonCon{
-    transform: scaleY(1)
-
-}
-.buttonCon{
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    top:0;
-    padding-top:2rem;
-    height: 26%;
-    border-radius: 1rem  1rem 0 0;
-    background-color: #111a21b2;
-    transition:  transform 0.8s;
-    transform-origin: 0 0;
-   transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
-   transform: scaleY(0);
-}
-
-.buttonCon >a{
-    border: 1px solid white ; 
-    padding: 0.5rem  0.9rem;
-    position: relative;
-    margin:1rem 0.5rem;
-    color:white;
-    font-weight: 700;
-    
-}
-
-.buttonCon>a::before{
-    content: "";
-    position:absolute;
-    background: white;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-    transition:  transform 0.8s;
-     transform-origin: 0 0;
-    transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
-    transform: scaleY(0);
-    color:#111a21;
- }
- 
- .buttonCon>a:hover{
-     color:#111a21;
-
- }
- .buttonCon>a:hover::before{
-     transform: scaleY(1)
- }
- 
- 
- 
-
 .image{
     position: relative;
     height: 18rem;
-    width:50%;
+    width:100%;
     border-radius:1rem;
+    transition: 1s ease;
    
 }
 
+.image:hover .cardBody {
+    opacity: 1;
+    right: 0;
+    z-index: 0;
+}
+.image:hover{
+    z-index: 150;
+}
 .img{
     border-radius:1rem;
 }
@@ -147,13 +94,20 @@
 .projectdetails{
     background-color: #2e3a42;
     color: white;
-    width: 40%;
-    z-index: 3;
-    min-height: 70%;
-    height: fit-content;
-    padding: 1rem;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    min-height: 80%;
+    padding: 2rem;
     border-radius:1rem;
-    margin: -10%;
+}
+.projectCon > .projectdetails {
+    margin-left: -5%; 
+
+}
+.projectCon1 > .projectdetails {
+    margin-right: -5%; 
+
 }
 
 .flexCon{
@@ -162,22 +116,47 @@
 }
 .slideCon{
     display: flex;
-    width:calc(70vw * 5);
+    width: 100%;
+    flex-direction: column;
     transition: 1s ease all;
 }
 
-.arrow{
-    position: absolute;
-    width:2rem;
+.iconCon{
+    display: flex;
+    width: 100%;
+    color:white;
+}
+.iconCon > a {
+    color:white;
     height: 2rem;
-    top: 50%;
-    cursor: pointer;
-    z-index: 100;
+    width: 2rem;
+    margin-right: 1rem;
+
+}
+.cardBody {
+    position: absolute;
+    top:0;
+    right :-100%;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: #111a21be;
+    transition: 1s ease;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+
+}
+
+.icon {
+    color:white;
+    height: 100%;
+    width: 100%;
 }
 
 
-
-
+.iconCon > a:hover {
+    transform: scale(1.2);
+}
 
 @media (max-width:600px) {
     .arrow{
@@ -214,20 +193,6 @@
         display: none;
     }
     .slideCon{
-        width:calc(81vw * 5);
     }
-    .buttonCon{
-        width: 100%;
-        margin: 0;
-        padding:1.5rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .buttonCon > a{
-        font-size: 1rem;   
-        margin: 0;
-        margin-top: 0.5rem;
-    }
+  
 }

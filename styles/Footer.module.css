@@ -1,4 +1,8 @@
 .footer{
     height: 3rem;
+    border-top: 2px solid rgb(163, 163, 163);
     background-color: #111a21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

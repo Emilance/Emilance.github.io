@@ -1,7 +1,7 @@
 .container{
     position: fixed;
     width: 25%;
-    background-color: white;
+    background-color:#23dd4b;
     z-index: 500;
     height: 100vh;
     color: black;
@@ -15,7 +15,7 @@
 .mcontainer{
     position: fixed;
     width: 25%;
-    background-color: white;
+    background-color:#23dd4b;
     z-index: 500;
     height: 100vh;
     color: black;

@@ -8,7 +8,7 @@ const experienceInfo =[
     {
         title:"Backend developer at LearnPlanet",
         year: "Dec 2022 - Present",
-        description:"Currently working at  HomeSchoolNg as a NodeJs developer where I work on a project called learnplanet"
+        description:"As a Node.js developer at LearnPlanet, I build endpoints to create APIs and write test  codes using Jest to ensure efficient and reliable applications."
     },
 
     {

@@ -12,6 +12,13 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none;
+  color: white;
+    background: #111a21;
+
+  
+}
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -23,15 +30,15 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background: #111a21;
   }
-}
+} */
 
 
 
@@ -39,12 +46,12 @@ a {
   padding: 1rem;
   cursor: pointer;
   z-index: 500;
+  display: none;
   width: fit-content;
   height: fit-content;
   position: fixed;
   right: 6%;
   top:1.5rem;
-  display:none;
 }
 
 :root {

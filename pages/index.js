@@ -12,10 +12,30 @@ import Loading from '../components/sections/LoadingComponent.js'
 import SideNav from '../components/SideNav.jsx'
 const Projects = React.lazy(() => import('../components/sections/Projects.jsx'));
 import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion'
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Stars } from '@react-three/drei';
+import Earth from '../components/sections/Earth.js'
+
 
 export default function Home() {
   const [openSideBar,  setOpenSideBar] = useState(false)
   const [loading, setLoading] = useState(true);
+  const [mousePosition, setMousePosition] =useState({   x:0,  y:0, })
+    useEffect(()=>{
+         const mouseMove = (e)=> {
+           setMousePosition({
+            x:e.clientX,
+            y: e.clientY
+           })
+         }
+         window.addEventListener("mousemove", mouseMove)
+
+         return ()=> {
+           window.removeEventListener("mousemove", mouseMove)
+         }
+    },[])
+
   useEffect(() => {  
      // Simulate a delay before hiding the loading screen
      const delay = setTimeout(() => {
@@ -29,6 +49,14 @@ export default function Home() {
 
   const  toggleSideBar = ()=>{
     setOpenSideBar(!openSideBar)
+  }
+ const  variants = {
+    default: {
+      x:mousePosition.x -16,
+      y:mousePosition.y -16
+
+    }
+
   }
   return (
     <div className={styles.container}>
@@ -49,6 +77,12 @@ export default function Home() {
    <SideNav/>
 
      <div className={styles.pageContainer}>
+      <motion.div className={styles.cursor}
+        variants={variants}
+        animate ="default"
+      />
+
+     
        <FancyBurger toggleSideBar={toggleSideBar} />
        <AppBanner/>
        <About/>
@@ -62,8 +96,34 @@ export default function Home() {
 
      </div>
       
-     </> }
+     <div className={styles.canva}>
 
+     <Canvas
+         camera={{ position: [2, 0, 12.25], fov: 15 }}
+         style={{
+            backgroundColor: '#111a21',
+            width: '100%',
+            height: '100vh',
+         }}
+      >
+         <ambientLight intensity={1} />
+         <directionalLight intensity={0.4} />
+         <Suspense fallback={null}>
+            {/* <Model position={[1.5, -0.9, 4]}  dispose={null} />  */}
+            <Stars  radius={400} 
+          depth={100} 
+          count={20000} 
+          factor={7} 
+          saturation={5}  
+          fade={true}
+
+          />
+          <Earth   />
+         </Suspense>
+         <OrbitControls />
+      </Canvas>
+     </div>
+     </> }
     
     </div>
   )

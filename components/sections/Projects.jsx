@@ -8,20 +8,21 @@ import {MdArrowForwardIos, MdArrowBackIos } from "react-icons/md"
 
 const projectList =[
     
-    // {
-    //     image: "/dyen.png",
-    //     title: "DYEN",
-    //     description: "A fullstack Ecommerce website built with NextJS and MongoDB as database, It allows user to login add products to cart and checkout, admin can also logIn with unique login detail to view the admin dashboard",
-    //     live:"https://dyen.vercel.app",
-    //     source: "https://github.com/Emilance/Dyenwebsite"
-    // },
-    // {
-    //     image: "/befunded.png",
-    //     title: "BEFUNDED",
-    //     description:"I collaborated with 2 developers to build  beFunded a web app that connects entrepreneurs with angel investors and Venture capitalists who are ready to invest in companies and scalable ideas in exchange for equity"  ,
-    //     live:"https://be-funded.vercel.app",
-    //     source:"https://github.com/Emilance"
-    // },
+    {
+        image: "/laundryhub.png",
+        title: "LAUNDRYHUB",
+        description: "A fullstack laundry website built with React Redux,  Nodejs and MongoDB, with features like login system, Oauth, Scheduling, Payment Gateway integration, rating system  and admin dashboard",
+        live:"https://laundryhubtest.vercel.app/",
+        source: "https://github.com/Emilance"
+    },
+    {
+        image: "/astro.png",
+        title: "ASTROMUTATIO",
+        description: "A learning platform built for stellar enthusiast to learn about stars with videos and interactive 3d visualization, the app is built with NextJs and  threeJs ",
+        live:"https://astromutatio.vercel.app",
+        source: "https://github.com/Emilance/Astromutatio"
+    },
+    
     {
         image: "/vuepage.png",
         title: "Emchat Chat Application",
